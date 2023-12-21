@@ -1,0 +1,55 @@
+html {
+    height: 100%;
+    width: 100%;
+    
+  }
+  
+  body {
+    height: 100%;
+    width: 100%;
+    font-family:"Ysabeau Office";
+    display: flex;
+    justify-content: center;
+    /* border: 5px solid rgb(0, 0, 0); */
+    background-color: #a5a5a5;
+  }
+  
+  .center-box{
+    width: 1200px;
+    /* height:1000px; */
+    display :flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    /* border: 5px solid rgb(255, 0, 0); */
+    text-align: center;
+  }
+  
+  
+  p{
+  color: rgb(0, 0, 0);
+   font-size: 25px;
+   font-weight: 400;
+   word-wrap: break-word
+  }
+
+  
+  .button-box{
+    display: flex;
+    flex-direction: row;
+    width: 800px;
+    height: 100px;
+    justify-content: space-between;
+  }
+
+h1{
+    color:#000000
+}
+    
+
+  ul {
+    text-align: left;
+    color:rgb(0, 0, 0);
+    font-size: 25px;
+  }

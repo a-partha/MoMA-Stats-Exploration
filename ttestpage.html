@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>MoMA Narrative</title>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Work Sans">
+  <link rel="stylesheet" href="ttestpage.css">
+  <title>D3.js Bar Chart</title>
+ 
+</head>
+<body>
+  <!-- <div> -->
+    <div class="container">
+      <p>In the plot from the previous page, one can see that each decade has always had more male artworks compared to the non-male (female and non-binary) artworks. To check if this is by random chance alone or not, data from the 1960s and 2000s where male artworks were significantly higher in number, and data from a decade on both sides of those were considered. A t-test was performed for each one.</p>
+      <p>A t-test basically estimates the true difference between two group means using the ratio of the difference in group means over the pooled standard error. With a t-test, there is one independent variable (gender with two groups/levels in this case) and one dependent variable (number of acquisitions in this case).</p>
+      <p>Before a t-test, we perform an F-test for variance. The null-hypothesis H0, a statement that there is no significant difference or effect, for the F-test is given by <b>H0: Variances of number of male and non-male artworks are equal.</b></p>
+
+      <p>Except for the 1990s, F-test results for data from every other decade resulted in F > F-critical (one-tail) and p-values (one and two-tail) < 0.05 significance level. So H0 was rejected to proceed with an unequal varaince independent t-test.</p>
+      <p>For the 1990s, F < F-critical (one-tail) and p-values (one and two-tail) were > 0.05 significance level. So H0 could not be rejected and an equal variance independent t-test was performed instead.</p>
+
+      <p>Irrespective of the type, <b>H0 for the t-test: There is no difference between the mean number of acquisitions from male and non-male artists.</b></p>
+      <div id="table1"></div>
+      <p>All t-values deviate enough from 0 to have an effect on the mean difference. That combined with the fact that all p-values (of one and two tails) are < 0.05 implies that H0 could be rejected for each of those t-tests.</p>
+      <p>It would suggest that <b>the significant increase in the mean number of artwork acquisitions from male artists for each of those decades is also not likely due to random chance alone.</b></p>
+      <br>
+      <p>So, the null hypothesis was rejected when considering two "abnormal" samples (1960s and 2000s) in which a huge jump in the mean number of acquisitions for male-produced artwork was observed. It was also rejected for "normal" decades before and after those decades.</p>
+      <br>
+      <p> <i>Thus, the overall trend of male artworks being more in number than non-male artworks at the MoMA over the years is not just due to random chance!</i></p>  
+      <button type="button" class="button" onclick="window.location.href='chisqpage.html';">Next</button>
+      </div>
+  <script src="d3.js"></script>
+  <script src="https://d3js.org/d3-scale-chromatic.v3.min.js"></script>
+
+  <script src="ttestpage.js"></script>
+</body>
+</html>

@@ -1,0 +1,115 @@
+body {
+    font-family:"Patua One";
+    font-size: 16px;
+    padding: 1em;
+    background:#ffcccb;
+  }
+  
+  h1 {
+    font-size: 3em;
+    margin: 0.25em 0;
+  }
+  
+  h3 {
+    font-size: 2em;
+    /* margin: 0.25em 0; */
+  }
+  
+  p {
+    font-size: 1em;
+    padding-left: 25px;
+    margin-bottom: -10px;
+
+  }
+
+  .tooltip {
+    position: absolute;
+    background-color: white;
+    border: solid 1px;
+    border-radius: 5px;
+    padding: 10px;
+    opacity: 0;
+    /* width: 50px; */
+  }
+
+  #container {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    margin-left: 30px;
+    margin-right: 30px;
+    /* margin-top: 15px; */
+    /* border: 5px solid #000000; */
+  }
+  .center-box{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  #variable-dropdown{
+    display: flex;
+    flex-direction: row;
+    align-self: start;
+    /* margin-left: 50px; */
+    margin-bottom: -25px;
+    width:120px;
+    text-align: center;
+    border: 3px solid #000000;
+    border-radius: 7px;
+    font-family:"Patua One";
+  }
+
+  #type-dropdown{
+    display: flex;
+    flex-direction: row;
+    align-self: end;
+    /* margin-right: 60px; */
+    width:180px;
+    text-align: center;
+    border: 3px solid #000000;
+    border-radius: 7px;
+    font-family:"Patua One";
+  }
+
+  /* #v-dropdown,#t-dropdown{
+    font-family:"Patua One";
+  } */
+  
+  svg{
+    display: flex;
+    align-self: center;
+    background-color: rgb(240, 198, 224);
+    /* background-color: rgb(191, 188, 190); */
+    border: 5px solid #000000; 
+    margin-top: 20px; 
+    
+  }
+
+  h3{
+    align-self: center;
+    /* padding-bottom: 15px; */
+  }
+  
+
+  .button {
+    background-color: rgba(255, 255, 255, 0.584);
+    opacity: 1;
+    height: 35px;
+    width: 100px;
+    font-family:"Patua One";
+    font-size: 16px;
+    text-align: center;
+    /* border-radius:25px; */
+    align-self: center;
+    color: #000000;
+    margin-top: 30px;
+    border: 5px solid #000000;
+  }
+
+  .button:hover {
+    background-color:#fc8888;
+    color: rgb(0, 0, 0);
+    transition: 0.2s;
+    border: 5px solid #cf0000;
+  }

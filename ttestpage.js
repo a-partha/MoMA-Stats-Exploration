@@ -1,5 +1,5 @@
 let data1 = [
-        ['Decade', 't-value', 'p-value (one-tail)', 'p-value (one-tail)'],
+        ['Decade', 't-value', 'p-value (one-tail)', 'p-value (two-tail)'],
         ['1950s', 5.05, 0, 0],
         ['1960s', 7.11, 0, 0],
         ['1970s', 9.69, 0, 0],

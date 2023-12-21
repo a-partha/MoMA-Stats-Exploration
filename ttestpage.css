@@ -14,6 +14,7 @@ html {
     align-items: center;
     font-size: 19px;
     color: rgb(0, 0, 0);
+    
   }
 
   .container{
@@ -25,7 +26,11 @@ html {
     text-align: left;
     padding-top: 40px;
     padding-bottom: 50px;
+    padding-left: 50px;
+    padding-right: 50px;
     text-align: justify;
+    border: 5px solid #34489b;
+    margin-bottom: 30px;
   }
 
 
@@ -74,3 +79,8 @@ th.header-hover:hover {
   border: 4px solid hsl(216, 100%, 26%);
 }
 
+.button:active {
+  /* background-color: #3e8e41; */
+  box-shadow: 0 5px #666;
+  transform: translateY(4px);
+}

@@ -94,7 +94,7 @@ colorScale = colorScales[state.selectedVariable];
 
   // Add type options to the dropdown
   typeDropdown.selectAll("option")
-    .data(['all', 'male', 'female', 'non-binary', 'Drawings & Prints', 'Photography', 'Architecture & Design', 'Painting & Sculpture', 'Media and Performance', 'Fluxus Collection'])
+    .data(['all', 'male', 'female', 'non-binary', 'Drawings & Prints', 'Photography', 'Architecture & Design', 'Painting & Sculpture', 'Media and Performance'])
     .enter().append("option")
     .attr("value", d => d)
     .style("font-family", "inherit")

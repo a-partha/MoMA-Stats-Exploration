@@ -12,9 +12,9 @@
 <body>
   <!-- <div> -->
     <div class="container">
-      <p align="center">The table below is a continegency table for observed frequencies of artworks according to an artist's gender and MoMA's art departments:</p>
+      <p align="center">The table below is a continegency table for observed frequencies (count) of artworks according to an artist's gender and MoMA's art departments:</p>
       <div id="ofreq"></div>
-      <p><b>Does an artist's gender have any impact on what art department their work belongs to at the museum?</b></p>
+      <p><b>Does an artist's gender have any impact on which art department their work belongs to at the museum?</b></p>
       <p align="center">To answer that, a chi-squared test was used. It checks for statistical dependency between two catagorical variables - gender and art department in our case.</p>
       <p><b>H0 for the chi-squared test:</b> The two variables are statistically independent.</p>
       <p align="center">For a false H0, at least some of observed and expected frequencies (the count expected in a cell if the variables were independent) tend not to be close, leading to large residual values (difference between observed and expected values), and a large chi-square statistic.</p>
@@ -22,15 +22,15 @@
       <p>The table below is a continegency table for expected values:</p>
       <div id="efreq"></div>
       <p>Obtained chi-square statistic = 189.42</p>
-      <p>p-value = ~0</p>
+      <p>p-value = ~ 0</p>
       <p align="center">A large chi-square statistic with a p-value < 0.05 suggests strong evidence against H0. So, it was rejected with a conclusion that artist gender and museum art department are statistically dependent.</p>    
       <p>But how strong is the dependency? A residual analysis was performed for that.</p>
      
       <p>The table below shows the standard residuals (residuals over standard error) for the two variables:</p>
       <div id="sres"></div>
       <p align="center">Six standard residuals have absolute values greater than 2. Among these, four have values exceeding 3</p>
-      <p align="center">After observing the positive and negative standardized residuals, the conclusion is that males are more likely to have their artwork in the Architecture & Design department. Conversely, they are less likely to have it in the Drawings & Prints department and even less likely to have it in the Media & Performance department than what one would expect if the variables were truly independent.</p>
-      <p align="center">Non-males are more likely to have their artwork in the Drawings & Prints department, and even more likely to have it in the Media & Performance department. Conversely, they are less likely to have it in the Architecture & Design department than what one would expect if the variables were truly independent.</p>
+      <p align="center">After observing the positive and negative standardized residuals, the conclusion is that <b>males are more likely to have their artwork in the Architecture & Design department</b>. Conversely, they are <b>less likely to have it in the Drawings & Prints department</b> and <b>even less likely to have it in the Media & Performance department</b> than what one would expect if the variables were truly independent.</p>
+      <p align="center"><b>Non-males are more likely to have their artwork in the Drawings & Prints department</b>, and <b>even more likely to have it in the Media & Performance department</b>. Conversely, they are <b>less likely to have it in the Architecture & Design department</b> than what one would expect if the variables were truly independent.</p>
      </div>
 
   <script src="d3.js"></script>

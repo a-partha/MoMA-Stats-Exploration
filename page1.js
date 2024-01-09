@@ -71,6 +71,7 @@ colorScale = colorScales[state.selectedVariable];
     .attr("id", "variable-dropdown")
     .on("change", function () {
       state.selectedVariable = this.value;
+      updateDropdowns(); // Updated function to handle dropdown updates
       draw(); // 
     });
 
@@ -86,7 +87,6 @@ colorScale = colorScales[state.selectedVariable];
   typeDropdown = d3.select("#container")
     .append("select")
     .attr("id", "type-dropdown")
-   
     .on("change", function () {
       state.selectedType = this.value;
       draw(); 
@@ -164,7 +164,8 @@ svg.append("text")
   .style("opacity", 0);
  };
 
-  draw(); 
+ updateDropdowns();
+ draw(); 
 }
 
 
@@ -273,5 +274,27 @@ tableBody2.selectAll("tr")
   .append("tr")
   .attr("class", "stats_2000")
   .html(d => `<td>${d.statistic}</td><td>${d.value}</td>`);
+}
 
+/* NEW FUNCTION TO UPDATE DROPDOWNS */
+function updateDropdowns() {
+  // Clear existing options
+  typeDropdown.selectAll("option").remove();
+
+  // Add options based on the selected variable
+  if (state.selectedVariable === 'gender') {
+    typeDropdown.selectAll("option")
+      .data(['all', 'male', 'female', 'non-binary'])
+      .enter().append("option")
+      .attr("value", d => d)
+      .style("font-family", "inherit")
+      .text(d => d);
+  } else if (state.selectedVariable === 'art department') {
+    typeDropdown.selectAll("option")
+      .data(['all', 'Drawings & Prints', 'Photography', 'Architecture & Design', 'Painting & Sculpture', 'Media and Performance'])
+      .enter().append("option")
+      .attr("value", d => d)
+      .style("font-family", "inherit")
+      .text(d => d);
+  }
 }

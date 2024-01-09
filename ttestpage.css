@@ -8,7 +8,7 @@ html {
     /* height: 800px; */
     width: 100vw;
     background-color: #aab6e4;
-    font-family:"Work Sans";
+    font-family:"Cantarell";
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -62,7 +62,8 @@ th.header-hover:hover {
   opacity: 1;
   height: 35px;
   width: 100px;
-  font-family:"Work Sans";
+  /* font-family:"Work Sans"; */
+  font-family: "Ubuntu";
   font-size: 16px;
   text-align: center;
   border-radius:10px;

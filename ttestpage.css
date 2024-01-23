@@ -50,7 +50,8 @@ th, td {
 }
 
 tr:hover {
-    background-color: #b0b0b4; 
+    /* background-color: #b0b0b4;  */
+    background-color: #c7c7ff; 
 }
 
 th.header-hover:hover {

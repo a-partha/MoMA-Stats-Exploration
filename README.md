@@ -1,5 +1,5 @@
 # IDV Final Project
-Site link: https://a-partha.github.io/IDV-Final-Project/home.html
+Site link: https://a-partha.github.io/MoMA-Stats-Exploration/home.html
 <br>
 - An exploratory style statistics-based data visualization project.
 - Interactive bar plot with tooltips and drop down menus.
